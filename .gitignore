@@ -8,3 +8,6 @@ npm-debug.log
 
 # Intellij IDE
 .idea
+
+# Generated JS Files
+*.js
