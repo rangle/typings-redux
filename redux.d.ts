@@ -73,7 +73,8 @@ declare module Redux {
   }
 
   interface ReduxStatic {
-    createStore<T>(reducer: Reducer<T>, initialState?: T): Store<T>;
+    createStore<T>(reducer: Reducer<T>, initialState?: T,
+                   enhancer?: Function): Store<T>;
     bindActionCreators<T extends Map<ActionCreator>,
       TP extends Map<PartialDispatch>>(actionCreators: T,
                                        dispatch: Dispatch): TP;
